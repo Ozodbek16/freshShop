@@ -6,4 +6,8 @@ router.get("/", home.home);
 
 router.get("/about", home.about);
 
+router.get("/gallery", home.gallery);
+
+router.get("/contact-us", home.contactUs);
+
 module.exports = router;

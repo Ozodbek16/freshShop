@@ -14,4 +14,19 @@ module.exports = {
       title: "Cart",
     });
   },
+  checkout: async (req, res) => {
+    res.render("checkout", {
+      title: "Checkout",
+    });
+  },
+  myAccount: async (req, res) => {
+    res.render("my-account", {
+      title: "My account",
+    });
+  },
+  wishlist: async (req, res) => {
+    res.render("wishlist", {
+      title: "wishlist",
+    });
+  },
 };

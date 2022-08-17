@@ -9,4 +9,14 @@ module.exports = {
       title: "About",
     });
   },
+  gallery: async (req, res) => {
+    res.render("gallery", {
+      title: "Gallery",
+    });
+  },
+  contactUs: async (req, res) => {
+    res.render("contact-us", {
+      title: "Contact-us",
+    });
+  },
 };
