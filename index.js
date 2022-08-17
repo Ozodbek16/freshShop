@@ -1,8 +1,9 @@
 const express = require("express");
 const { create } = require("express-handlebars");
+const session = require("express-session");
 const app = express();
 require("dotenv").config();
-const MongoDBStore = require('')
+const MongoDBStore = require("connect-mongodb-session")(session);
 
 const hbs = create({
   extname: "hbs",
@@ -13,6 +14,8 @@ const hbs = create({
   },
 });
 
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 // Register `hbs.engine` with the Express app.
 app.engine("hbs", hbs.engine);
 app.set("view engine", "hbs");
