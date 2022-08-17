@@ -2,8 +2,9 @@ const express = require("express");
 const { create } = require("express-handlebars");
 const session = require("express-session");
 const app = express();
-require("dotenv").config();
 const MongoDBStore = require("connect-mongodb-session")(session);
+const path = require("path");
+require("dotenv").config();
 
 const hbs = create({
   extname: "hbs",
@@ -16,6 +17,7 @@ const hbs = create({
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, "public")));
 // Register `hbs.engine` with the Express app.
 app.engine("hbs", hbs.engine);
 app.set("view engine", "hbs");
@@ -24,8 +26,10 @@ app.set("views", "./views");
 //routing
 
 const clientRouter = require("./routes/client/index");
+const error = require("./middleware/404");
 
 app.use("/", clientRouter);
+app.use(error);
 
 try {
   require("./helper/db");
@@ -57,3 +61,5 @@ try {
 } catch (error) {
   console.error(error);
 }
+
+//MONGO_URI="mongodb+srv://Ozodbek16:q0w9e8r7@cluster0.yfxl3.mongodb.net/technostore" 
