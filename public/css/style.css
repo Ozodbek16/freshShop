@@ -972,8 +972,6 @@ ul.cart-list > li.total > .btn:hover {
 .filter-button-group button.active {
   background: #000000;
 }
-.filter-button-group button {
-}
 .products-single {
   overflow: hidden;
   position: relative;
@@ -987,26 +985,6 @@ ul.cart-list > li.total > .btn:hover {
   margin: 0 auto;
   text-align: center;
   display: block;
-}
-.type-lb {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  z-index: 8;
-}
-.type-lb .sale {
-  background: #b0b435;
-  color: #ffffff;
-  padding: 2px 10px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-.type-lb .new {
-  background: #000000;
-  color: #ffffff;
-  padding: 2px 10px;
-  font-weight: 700;
-  text-transform: uppercase;
 }
 .why-text {
   background: #f5f5f5;
