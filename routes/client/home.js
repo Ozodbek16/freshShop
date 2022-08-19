@@ -10,4 +10,6 @@ router.get("/gallery", home.gallery);
 
 router.get("/contact-us", home.contactUs);
 
+router.post("/user/mail", home.email);
+
 module.exports = router;
