@@ -1,5 +1,8 @@
 module.exports = {
   home: async (req, res) => {
-    res.send('hello')
+    res.render("admin/index", {
+      title: `${process.env.admin_url}`,
+      layout: 'admin'
+    });
   },
 };

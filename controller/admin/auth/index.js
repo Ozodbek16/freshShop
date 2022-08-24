@@ -21,22 +21,20 @@ module.exports = {
     if (!admin) {
       req.flash("error", "Username or password incorrect");
       res.redirect("back");
-      console.log("ushladi 1");
       return;
     }
 
-    if (admin.username !== req.body.username) {
+    if (admin.username !== req.body.username || req.body.username == "") {
       req.flash("error", "Username or password incorrect");
       res.redirect("back");
-      console.log("ushladi 2", admin.username + req.body.username);
       return;
     }
 
-    const pass = bcrypt.compare(admin.password, req.body.password);
-    if (!pass) {
+    const pass = await bcrypt.compare(req.body.password, admin.password);
+
+    if (!pass || req.body.password == "") {
       req.flash("error", "Username or password incorrect");
       res.redirect("back");
-      console.log("ushladi 3");
       return;
     }
 
