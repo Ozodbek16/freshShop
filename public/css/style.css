@@ -2195,9 +2195,6 @@ ul.cart-list > li.total > .btn:hover {
   font-weight: 700;
   line-height: 35px;
 }
-.my-account-box-main {
-  padding: 70px 0px;
-}
 .shopping-box a {
   font-size: 18px;
   color: #ffffff;
@@ -2290,16 +2287,8 @@ ul.cart-list > li.total > .btn:hover {
   border: 2px solid #000000;
   margin-top: 15px;
 }
-.my-account-page a {
-  color: #000000;
-}
-.my-account-page a:hover {
-  color: #b0b435;
-}
 .service-icon i {
   font-size: 34px;
-}
-.my-account-page a:hover i {
 }
 .service-desc p {
   font-size: 16px;

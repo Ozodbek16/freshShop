@@ -31,7 +31,7 @@ process.once("SIGTERM", () => {
 module.exports = {
   home: (req, res) => {
     res.render("index", {
-      title: "",
+      title: "FreshShop",
     });
   },
   about: async (req, res) => {

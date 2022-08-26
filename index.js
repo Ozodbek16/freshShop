@@ -19,7 +19,7 @@ const hbs = create({
 const store = new MongoDBStore({
   uri: process.env.MONGO_URI,
   collection: "mySession",
-  expires: 1000 * 600,
+  expires: 1000 * 6000,
 });
 
 app.use(
