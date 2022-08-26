@@ -2122,27 +2122,6 @@ ul.cart-list > li.total > .btn:hover {
 .remove-pr {
   text-align: center;
 }
-.coupon-box .input-group .form-control {
-  min-height: 50px;
-  border-radius: 0px;
-  font-weight: 400;
-  border: 1px solid #e8e8e8;
-  box-shadow: none !important;
-}
-.coupon-box .input-group .form-control::-moz-placeholder {
-  color: #000000;
-}
-.coupon-box .input-group .input-group-append .btn-theme {
-  background: #000000;
-  color: #ffffff;
-  border: none;
-  border-radius: 0px;
-  font-size: 16px;
-  padding: 0px 20px;
-}
-.coupon-box .input-group .input-group-append .btn-theme:hover {
-  background: #b0b435;
-}
 .update-box input[type="submit"] {
   background: #000000;
   border: medium none;
@@ -2239,14 +2218,6 @@ ul.cart-list > li.total > .btn:hover {
   background-color: #b0b435;
   box-shadow: none;
 }
-.new-account-login h5 {
-  font-size: 18px;
-  color: #1111111;
-  font-weight: 600;
-}
-.new-account-login h5 a:hover {
-  color: #b0b435;
-}
 .review-form-box button {
   padding: 10px 20px;
   color: #ffffff;
@@ -2262,11 +2233,6 @@ ul.cart-list > li.total > .btn:hover {
 }
 .custom-control-input:focus ~ .custom-control-label::before {
   box-shadow: none;
-}
-.odr-box a {
-  font-size: 18px;
-  color: #111111;
-  font-weight: 700;
 }
 .account-box {
   text-align: center;
